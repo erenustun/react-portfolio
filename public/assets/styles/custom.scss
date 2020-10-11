@@ -25,10 +25,9 @@ header {
     .nav-url {
         display: inline-block;
         font-size: 1.25rem;
-        padding: .5rem .75rem;
-        transition: 450ms ease-in-out;
-        color: white;
+        padding: .5rem;
         text-decoration: none;
+        transition: 450ms ease-in;
         &::after {
             content: '';
             display: block;
@@ -42,5 +41,11 @@ header {
             width: 100%;
             transition: width 550ms;
         }
+    }
+    .divider {
+        height: 45px;
+        width: 3px;
+        background-color: white;
+        margin-right: .75rem;
     }
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "react calculator",
+    "description": "A simple calculator programmed with ReactJS.",
+    "urls": {
+      "github": "https://github.com/erenustun/portfolio/blob/main/pages/projects/calculator/index.js",
+      "demo": "https://old-erenustun.netlify.app/projects/calculator"
+    },
+    "image": "thumbnail_calc.png",
+    "tags": ["netlify", "reactJS"]
+  },
+  {
+    "name": "laravel ecommerce API",
+    "description": "An API featuring authentication and data exchange between retail products.",
+    "urls": {
+      "github": "https://github.com/erenustun/laravel-ecommerce-api",
+      "demo": ""
+    },
+    "image": "thumbnail_api.png",
+    "tags": ["vagrant", "mySQL", "laravel", "laravel passport"]
+  },
+  {
+    "name": "React portfolio",
+    "description": "This portfolio is based on ReactJS and provides information about my educational background, carrer and professional skills.",
+    "urls": {
+      "github": "https://github.com/erenustun/portfolio",
+      "demo": ""
+    },
+    "image": "thumbnail_portfolio.png",
+    "tags": ["netlify", "reactJS", "tailwindCSS"]
+  }
+]

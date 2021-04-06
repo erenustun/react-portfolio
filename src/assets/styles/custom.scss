@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700");
+
+.font-poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-karla {
+    font-family: "Karla", sans-serif;
+}
+
+.font-work {
+    font-family: "Work Sans", sans-serif;
+}
+
+.font-quatro {
+    font-family: "Quattrocento Sans", sans-serif;
+}
+
+header {
+    @apply font-karla;
+    .logo {
+        flex: 1;
+    }
+
+    nav {
+        flex: 2;
+        ul {
+            li {
+                a {
+                    @apply inline-block no-underline cursor-pointer text-lg;
+                    &:after {
+                        content: "";
+                        height: 2px;
+                        margin-top: 4px;
+                        transition: width 150ms;
+                        @apply w-0 block;
+                    }
+                    &:after {
+                        @apply bg-gray-200;
+                    }
+                    &:hover::after {
+                        @apply w-full;
+                    }
+                    &:focus {
+                        @apply outline-none;
+                    }
+                }
+                .active {
+                    @apply inline-block no-underline;
+                    &:after {
+                        content: "";
+                        height: 2px;
+                        margin-top: 4px;
+                        @apply bg-gray-200 block w-full;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section {
+    h1,
+    h2 {
+        @apply font-work;
+    }
+    h3,
+    h4,
+    p,
+    a,
+    button {
+        @apply font-quatro outline-none;
+    }
+    .btn {
+        @apply px-3 py-1 rounded uppercase text-gray-100 bg-blue-700;
+        &:hover {
+            @apply bg-blue-800;
+        }
+    }
+}
+
+section#home {
+    @apply font-work;
+    height: calc(
+        100vh - 6rem
+    ); // why 6rem? --> from 100% of the view height of the enduser-device I substract the headers height (6rem)
+}
+
+form,
+div#tags {
+    @apply font-karla;
+}
+
+section#contact {
+    height: 60vh;
+}
+
+footer {
+    @apply font-sans;
+}
+
+.headroom {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+}
+.headroom--scrolled {
+    transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+    position: fixed;
+    transform: translateY(-100%);
+}
+.headroom--pinned {
+    position: fixed;
+    transform: translateY(0%);
+}
+
+.nav-height {
+    height: calc(100vh - 80px);
+}
+
+/* https://codesandbox.io/s/responsive-navbar-forked-mjgr5?file=/src/header/header.css:0-1998 */
+
+/* Desktop */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    height: 80px;
+    @apply bg-gray-900;
+}
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-options {
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 50px;
+    list-style-type: none;
+}
+.option :hover {
+    color: white;
+}
+@media (max-width: 1024px) {
+    /* Mobile */
+    header {
+        padding: 0px 10px;
+    }
+    .nav-options {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 350ms ease;
+        flex-direction: column;
+        list-style-type: none;
+        grid-gap: 0px;
+        @apply nav-height;
+    }
+    .nav-options.active {
+        left: 0;
+        opacity: 1;
+        transition: all 350ms ease;
+        z-index: 1;
+        align-content: center;
+        padding-left: 0px;
+        @apply bg-gray-800;
+    }
+    .option {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px;
+    }
+}

@@ -1,0 +1,50 @@
+### production ###
+/build
+
+### react ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+/node_modules
+/bower_components
+
+### vscode ###
+/.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### yarn ###
+# https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+
+/.yarn
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+yarn.lock
+yarn-debug.log*
+yarn-error.log*
+
+### npm ###
+/.npm
+npm-debug.log*
+package-lock.json
+
+### misc ###
+/.netlify
+/coverage
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.eslintcache
+/.pnp
+.pnp.js

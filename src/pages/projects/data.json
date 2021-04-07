@@ -11,7 +11,7 @@
   },
   {
     "name": "laravel ecommerce API",
-    "description": "An API featuring authentication and data exchange between retail products.",
+    "description": "An API is based on Laravel. It fetches, updates, stores and deletes data based on the urls and header methods (aswell as request body). It also features Authentication and requires a MySQL database.",
     "urls": {
       "github": "https://github.com/erenustun/laravel-ecommerce-api",
       "demo": ""
@@ -21,7 +21,7 @@
   },
   {
     "name": "React portfolio",
-    "description": "This portfolio is based on ReactJS and provides information about my educational background, carrer and professional skills.",
+    "description": "A developer's portfolio based on ReactJS. It provides information about my educational background, carrer and professional skills.",
     "urls": {
       "github": "https://github.com/erenustun/portfolio",
       "demo": ""

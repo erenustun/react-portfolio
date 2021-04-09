@@ -23,7 +23,7 @@
     "name": "React portfolio",
     "description": "A developer's portfolio based on ReactJS. It provides information about my educational background, carrer and professional skills.",
     "urls": {
-      "github": "https://github.com/erenustun/portfolio",
+      "github": "https://github.com/erenustun/react-portfolio",
       "demo": ""
     },
     "image": "thumbnail_portfolio.png",

@@ -21,7 +21,7 @@ export default function Home() {
           such as {" "}
           <TextLoop
             children={['REACT APPs', 'RESTFUL APIs', 'RELATIONAL DBs']}
-            interval={1750} // 1750
+            interval={2500}
             springConfig={{ stiffness: 180, damping: 9 }}
             className="text-blue-500 font-semibold w-36"
           />

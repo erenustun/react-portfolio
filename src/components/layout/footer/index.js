@@ -23,7 +23,7 @@ export default function Footer() {
                         <FontAwesomeIcon icon={faGithub} size="2x" />
                     </motion.a>
                     <motion.a
-                        href="https://www.linkedin.com/in/eren-üstün-957807153/"
+                        href="https://www.linkedin.com/in/erenustun/"
                         target="_blank"
                         rel="noreferrer"
                         whileHover={{ scale: 1.1, }}>

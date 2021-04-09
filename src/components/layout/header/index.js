@@ -48,7 +48,7 @@ export default function Header() {
           {/** Social links */}
           <div className="absolute right-0 mr-16 mt-1 lg:mt-0 pr-1 lg:pr-0">
             <motion.a
-              href="https://www.linkedin.com/in/eren-üstün-957807153/"
+              href="https://www.linkedin.com/in/erenustun/"
               className="mr-1 lg:ml-3 text-xl lg:text-lg"
               target="_blank"
               rel="noreferrer"

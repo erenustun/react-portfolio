@@ -53,10 +53,10 @@ export default function Profile() {
 
                     {/** Download buttons to the cv in English, aswell as German */}
                     <div className="pb-2 lg:pb-1 flex flex-col lg:flex-row">
-                        <Button href="https://drive.google.com/file/d/11F15CBA1im6Y9NmUBGfhyKzquFjF-bY7/view?usp=sharing" className="mb-3 lg:mb-0 lg:ml-2">
+                        <Button href="/static/images/CV-EUe-ENG.pdf" className="mb-3 lg:mb-0 lg:ml-2">
                             <FontAwesomeIcon icon={faFilePdf} /> More Info (CV) [ENG]
                             </Button>
-                        <Button href="https://drive.google.com/file/d/1e7r9gTi-RaMqZLSmHbqNf-Xrlu9Ccc6d/view" className="lg:ml-4">
+                        <Button href="/static/images/CV-EUe-GER.pdf" className="lg:ml-4">
                             <FontAwesomeIcon icon={faFilePdf} /> Mehr Info (CV) [GER]
                             </Button>
                     </div>

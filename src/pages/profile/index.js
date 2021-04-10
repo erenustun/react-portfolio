@@ -2,8 +2,8 @@ import React from 'react'
 import Button from '../../components/button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilePdf, faLaptopCode, faGlobeEurope } from '@fortawesome/free-solid-svg-icons'
-import profile from '../../assets/images/profile.jpg'
-import profileSquare from '../../assets/images/profile_square.jpg'
+import profile from '../../assets/images/profile_compressed.jpg'
+import profileSquare from '../../assets/images/profile_square_compressed.jpg'
 
 export default function Profile() {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import TextLoop from 'react-text-loop'
-import portrait from '../../assets/images/home.jpg'
+import portrait from '../../assets/images/home_compressed.jpg'
 
 export default function Home() {
   return (
